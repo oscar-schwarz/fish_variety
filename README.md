@@ -1,1 +1,1 @@
-See Javadoc at: 
+See Javadoc at: https://oscar-schwarz.github.io/fish_variety/javadoc/fish_variety/package-summary.html

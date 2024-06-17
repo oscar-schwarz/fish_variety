@@ -51,7 +51,9 @@ public class FishCollection {
     }
 
     public void add(Fish newFish) {
-        this.fishes.add(newFish);
+        if (!this.fishes.contains(newFish)) {
+            this.fishes.add(newFish);
+        }
     }
 
     public void remove(Fish fish) {
@@ -65,5 +67,15 @@ public class FishCollection {
         }
 
         return price;
+    }
+
+    @Override
+    public String toString() {
+        ArrayList<String> names = new ArrayList<>();
+        for (Fish fish : this.fishes) {
+            names.add(fish.getName());
+        }
+
+        return String.join(", ", names);
     }
 }

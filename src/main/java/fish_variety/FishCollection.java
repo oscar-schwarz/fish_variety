@@ -6,6 +6,10 @@ public class FishCollection {
     private ArrayList<Fish> fishes = new ArrayList<Fish>();
     private FishConstraints constraints;
 
+    public FishConstraints getConstraints() {
+        return constraints;
+    }
+
     private Fish latest;
 
     public FishCollection(FishConstraints constraints, ArrayList<Fish> fishes) {

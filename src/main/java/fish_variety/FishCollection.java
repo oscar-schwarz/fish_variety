@@ -1,7 +1,6 @@
 package fish_variety;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class FishCollection {
     private ArrayList<Fish> fishes = new ArrayList<Fish>();

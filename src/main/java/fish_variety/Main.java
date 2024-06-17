@@ -54,13 +54,5 @@ public class Main
         });
 
         FishCollection collection = new FishCollection(constraints);
-        
-        collection.addFishesUntilMaxPrice(1000);
-
-        System.out.println(collection.getFishes().size());
-
-        for (Fish fish : collection.getFishes()) {
-            System.out.println(fish.getName());
-        }
     }
 }

@@ -9,7 +9,7 @@ public class FishCalculator {
 
         ArrayList<FishCollection> variants = new ArrayList<>();
 
-        for (Fish fish : constraints.getAllFish()) {
+        for (Fish fish : initialCollection.getUnaddedFishes()) {
             FishCollection collectionVariant = new FishCollection(constraints, initialCollection.getFishes());
 
             collectionVariant.add(fish);
@@ -19,7 +19,7 @@ public class FishCalculator {
             }
         }
 
-        if (variants.size() == 0) {
+        if (variants.isEmpty()) {
             return initialCollection;
         }
 

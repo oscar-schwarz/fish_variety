@@ -46,14 +46,14 @@ public class Main
         });
 
         constraints.addConstraints(zitterling, new Fish[] {
-            zitterling
+            grottensprotte
         });
 
         constraints.addConstraints(grottensprotte, new Fish[] {
             grueneMigraene, prachtpiranha, zitterling
         });
 
-        FishCollection bestVariant = FishCalculator.mostCompatibleFishTypesOfCollection(170, new FishCollection(constraints));
+        FishCollection bestVariant = FishCalculator.mostCompatibleFishTypesOfCollection(1000000, new FishCollection(constraints));
         System.out.println(bestVariant);
     }
 }

@@ -10,8 +10,6 @@ public class FishCollection {
         return constraints;
     }
 
-    private Fish latest;
-
     public FishCollection(FishConstraints constraints, ArrayList<Fish> fishes) {
         this.constraints = constraints;
         for (Fish fish : fishes) {
@@ -52,27 +50,8 @@ public class FishCollection {
         return true;
     }
 
-    public Fish getLatestFish() {
-        return this.latest;
-    }
-
     public void add(Fish newFish) {
-        this.latest = newFish;
-
-        if (this.fishes.contains(newFish)) return;
-
-        boolean wasAdded = false;
-        for (int i=0;i<this.fishes.size();i++) {
-            if (this.fishes.get(i).getPrice() > newFish.getPrice()) {
-                this.fishes.add(i, newFish);
-                wasAdded = true;
-                break;
-            }
-        }
-
-        if (!wasAdded) {
-            this.fishes.add(newFish);
-        }
+        this.fishes.add(newFish);
     }
 
     public void remove(Fish fish) {

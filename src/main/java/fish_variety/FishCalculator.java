@@ -64,6 +64,6 @@ public class FishCalculator {
     public void calculateVarietyForPrice(int price) {
         FishCollection bestVariant = FishCalculator.mostCompatibleFishTypesOfCollection(price, new FishCollection(this.constraints));
 
-        System.out.println("Es koennen maximal " + bestVariant.getFishes().size() + " Fische zusammen gekauft werden, zum Beispiel: " + bestVariant.toString());
+        System.out.println("Mit einem Kapital von " + price + " koennen maximal " + bestVariant.getFishes().size() + " Fische zusammen gekauft werden, zum Beispiel: " + bestVariant.toString());
     }
 }

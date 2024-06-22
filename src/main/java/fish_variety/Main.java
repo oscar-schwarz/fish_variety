@@ -53,7 +53,8 @@ public class Main
             grueneMigraene, prachtpiranha, zitterling
         });
 
-        FishCollection bestVariant = FishCalculator.mostCompatibleFishTypesOfCollection(170, new FishCollection(constraints));
-        System.out.println("Es koennen maximal " + bestVariant.getFishes().size() + " Fische zusammen gekauft werden, zum Beispiel: " + bestVariant.toString());
+        FishCalculator calculator = new FishCalculator(constraints);
+        
+        calculator.calculateVarietyForPrice(170);
     }
 }

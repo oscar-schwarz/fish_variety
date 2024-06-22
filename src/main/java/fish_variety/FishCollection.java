@@ -6,10 +6,6 @@ public class FishCollection {
     private ArrayList<Fish> fishes = new ArrayList<Fish>();
     private FishConstraints constraints;
 
-    public FishConstraints getConstraints() {
-        return constraints;
-    }
-
     public FishCollection(FishConstraints constraints, ArrayList<Fish> fishes) {
         this.constraints = constraints;
         for (Fish fish : fishes) {
@@ -19,6 +15,10 @@ public class FishCollection {
 
     public FishCollection(FishConstraints constraints) {
         this.constraints = constraints;
+    }
+
+    public FishConstraints getConstraints() {
+        return constraints;
     }
     
     public ArrayList<Fish> getFishes() {

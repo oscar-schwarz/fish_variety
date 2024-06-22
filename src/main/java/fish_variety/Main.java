@@ -1,7 +1,7 @@
 package fish_variety;
 
 /**
- * Hello world!
+ * The main class of the program
  *
  */
 public class Main

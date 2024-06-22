@@ -1,11 +1,11 @@
-/**
-* The FishConstraints class represents constraints between different types of fish.
-*/
 package fish_variety;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+* The FishConstraints class represents constraints between different types of fish.
+*/
 public class FishConstraints {
     private ArrayList<FishPair> constraints = new ArrayList<FishPair>();
     private ArrayList<Fish> fishes;

@@ -1,10 +1,10 @@
-/**
-* The FishCalculator class calculates the most compatible fish types that can be bought within a given price range.
-*/
 package fish_variety;
 
 import java.util.ArrayList;
 
+/**
+* The FishCalculator class calculates the most compatible fish types that can be bought within a given price range.
+*/
 public class FishCalculator {
 
     /**

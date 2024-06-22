@@ -1,8 +1,8 @@
+package fish_variety;
+
 /**
 * Represents a pair of fish.
 */
-package fish_variety;
-
 public class FishPair {
     private Fish first;
     private Fish second;

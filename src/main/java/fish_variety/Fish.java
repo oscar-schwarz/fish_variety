@@ -1,8 +1,8 @@
+package fish_variety;
+
 /**
 * The Fish class represents a type of fish with a name and price.
 */
-package fish_variety;
-
 public class Fish {
     private String name;
 

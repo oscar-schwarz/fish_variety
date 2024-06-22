@@ -1,10 +1,10 @@
-/**
-* Represents a collection of fishes with constraints.
-*/
 package fish_variety;
 
 import java.util.ArrayList;
 
+/**
+* Represents a collection of fishes with constraints.
+*/
 public class FishCollection {
     private ArrayList<Fish> fishes = new ArrayList<Fish>();
     private FishConstraints constraints;
